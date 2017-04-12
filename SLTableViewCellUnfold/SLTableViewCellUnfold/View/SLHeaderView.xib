@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dkg-Ve-Qin" customClass="SLHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3N-4O-z5o">
+                    <rect key="frame" x="20" y="19" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="Jsc-cP-QHa">
+                    <rect key="frame" x="321" y="23.5" width="15" height="8"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amX-s9-3x0">
+                    <rect key="frame" x="285" y="20.5" width="31" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.35695407000000001" green="0.9468161464" blue="0.14256011269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFS-cb-Oog">
+                    <rect key="frame" x="0.0" y="54" width="356" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="SjB-e9-y6X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="amX-s9-3x0" firstAttribute="centerY" secondItem="dkg-Ve-Qin" secondAttribute="centerY" id="DM8-Gx-2cJ"/>
+                <constraint firstAttribute="trailing" secondItem="Jsc-cP-QHa" secondAttribute="trailing" constant="20" id="DuI-Ms-4go"/>
+                <constraint firstItem="d3N-4O-z5o" firstAttribute="centerY" secondItem="dkg-Ve-Qin" secondAttribute="centerY" id="Gdq-GQ-Y0e"/>
+                <constraint firstItem="Jsc-cP-QHa" firstAttribute="centerY" secondItem="dkg-Ve-Qin" secondAttribute="centerY" id="QAO-fh-TtL"/>
+                <constraint firstAttribute="bottom" secondItem="vFS-cb-Oog" secondAttribute="bottom" id="UQP-ZP-DFn"/>
+                <constraint firstItem="d3N-4O-z5o" firstAttribute="leading" secondItem="dkg-Ve-Qin" secondAttribute="leading" constant="20" id="Z4d-dY-CTv"/>
+                <constraint firstItem="vFS-cb-Oog" firstAttribute="leading" secondItem="dkg-Ve-Qin" secondAttribute="leading" id="jg3-w5-EAf"/>
+                <constraint firstAttribute="trailing" secondItem="vFS-cb-Oog" secondAttribute="trailing" id="nyX-s3-gJd"/>
+                <constraint firstItem="Jsc-cP-QHa" firstAttribute="leading" secondItem="amX-s9-3x0" secondAttribute="trailing" constant="5" id="pU9-pN-UuY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImageView" destination="Jsc-cP-QHa" id="5w0-fZ-oS0"/>
+                <outlet property="contentLabel" destination="amX-s9-3x0" id="2Kq-gU-nB3"/>
+                <outlet property="seperatorLineView" destination="vFS-cb-Oog" id="4nf-3R-w6B"/>
+                <outlet property="titleLabel" destination="d3N-4O-z5o" id="ct9-hv-owX"/>
+            </connections>
+            <point key="canvasLocation" x="-352" y="-439"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-down" width="15" height="8"/>
+    </resources>
+</document>
